@@ -1,0 +1,598 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+}
+
+/* header css */
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #ffb249;
+    height: 8vh;
+    padding: 16px;
+}
+
+.headerBtns {
+    display: flex;
+    gap: 5rem;
+    margin-left: auto;
+}
+
+.headerBtns > * {
+    list-style: none;
+    gap: 2rem;
+}
+
+.headerBtns > li {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.headerBtns > li > span {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.headerTitleContainer {
+    display: flex;
+    align-items: center;
+    max-width: 210px;
+}
+
+.headerLogo {
+    width: 82px;
+    height: 82px;
+    border: 0px solid transparent;
+}
+
+.headerTitle {
+    width: 304px;
+    height: 31px;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 38px;
+    color: #000000;
+}
+
+.headerAppointmentBtn {
+    box-sizing: border-box;
+    width: 136px;
+    height: 32px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    background-color: transparent;
+    color: #000000;
+    cursor: pointer;        
+}
+
+.headerProfile {
+    width: 35px;
+    height: 35px;
+    margin-left: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.headerEllipse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    width: 34px;
+    border-radius: 50px;
+    border: 1px solid black;
+}
+
+.headerResponsive {
+    display: none;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.headerHamburger {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 860px) {
+    .headerResponsive {
+        display: block;
+    }
+
+    .headerProfile, .headerBtns {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .headerBtns.responsive {
+        display: flex;
+        position: absolute;
+        top: 11vh;
+        background-color: #FFB349;
+        z-index: 100;
+        width: 100%;
+        left: 0;
+        padding: 20px;
+        max-width: -webkit-fill-available;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* .headerProfile.responsive {
+        position: absolute;
+        display: flex;
+        top: 11vh;
+        z-index: 101;
+        left: 0;
+        width: 100%;
+        margin-left: 0%;
+        padding: 20px;
+        max-width: -webkit-fill-available;
+        align-items: center;
+        justify-content: center
+    }
+
+    .headerProfile.responsive > img {
+        margin-left: auto;
+    } */
+}
+
+/* celecteBackground Section css */
+.celecteBackground {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    z-index: 0;
+    width: 100%;
+}
+
+.celecteBackgroundImg {
+    height: 100%;
+    width: 85%;
+    z-index: 0;
+    margin-top: -100px;
+}
+
+/* what we do section css */
+.whatWeDo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: url("./static/what-we-do-background.png");
+    flex-wrap: wrap;
+}
+
+.whatWeDo > div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 580px;
+    padding: 0px 20px 0px 110px
+}
+
+.whatWeDo > div > button {
+    box-sizing: border-box;
+    width: 136px;
+    height: 32px;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+}
+
+.whatWeDoHeading {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 58px;
+}
+
+.whatWeDoSubHeading {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFB349;
+}
+
+.whatWeDoDescription {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: justify;
+}
+
+@media (min-width: 1000px) {
+    .whatWeDo > img {
+        max-width: 600px;
+    }    
+}
+
+/* zodiac signs css */
+.zodiacSigns {
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background: url("./static/zodiacBackground.png");
+}
+
+.zodiacSigns > span {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 58px;
+    color: #FFFFFF;
+    margin-top: 100px;
+}
+
+.zodiacSignCardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    gap: .5rem;
+}
+
+.zodiacSignCard {
+    flex: 1 0 16%;
+    margin-top: 100px;
+    max-width: 278px;
+}
+
+.zodiacSignCardImgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zodiacSignCardImgBackground {
+    z-index: 0;
+    position: absolute;
+    overflow: hidden;
+}
+
+.zodiacSignCardImg {
+    z-index: 10;
+    position: absolute;
+    overflow: hidden;
+}
+
+.zodiacSignCardText {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.zodiacSignCardTextHeading {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.zodiacSignCardTextSubHeading {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+@media (max-width: 425px) {
+    .zodiacSignCard {
+        flex: 1 0 50%
+    }
+}
+
+@media (max-width: 768px) {
+    .whatWeDo > div {
+        padding: 20px
+    }
+
+    .whatWeDo > img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .zodiacSignCard {
+        flex: 1 0 25%
+    }
+}
+
+@media (min-width: 1100px) {
+    .zodiacSignCard {
+        flex: 1 0 20%
+    }
+}
+
+/* services sections */
+.flickity-viewport {
+    min-height: 400px;
+    margin: 0px;
+    width: 100%;
+}
+
+.flickity-prev-next-button.next, .flickity-prev-next-button.previous {
+    display: none;
+}
+
+.main-carousel {
+    margin-top: 100px;
+    height: 100%;
+    width: 1060px;
+}
+
+.servicesSection {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    background: url("./static/services_background.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 60%;
+    width: 100%;
+}
+
+.servicesSubHeading {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    z-index: 100;
+    color: #FFB349;
+    padding: 50px;
+}
+
+.servicesTitle {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 58px;
+    text-align: center;
+    color: #FFFFFF;
+    z-index: 100;
+}
+
+.carousel-cell {
+    margin-right: 50px !important;
+    width: 33.333333333%;
+}
+
+.serviceCard {
+    height: 247px;
+    background: #D9D9D9;
+    border-radius: 10px;
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    align-self: center;
+    flex-direction: column;
+}
+
+.serviceCardTitle {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.serviceCardSubHeading {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #6B6B6B;
+}
+
+.viewMoreBtn {
+    width: 136px;
+    height: 32px;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    background-color: transparent;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+/* feedback section styling */
+.feedbackSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.feedbackImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedbackImage {
+    z-index: 10;
+}
+
+.feedbackImageBackground {
+    position: absolute;
+}
+
+.feedbackCardsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.feedbackCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    margin-top: 70px;
+}
+
+.feedbackCardDescription {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+    margin: 0 0 12px;
+    max-width: 200px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.feedbackCardTitle {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFB249;
+    margin-top: 10px;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+
+.feedbackSignContainer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* get in touch section */
+.getInTouchSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.getInTouchForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 728px;
+    margin: 150px 0px;
+}
+
+.getInTouchForm > img {
+    position: absolute;
+    align-self: flex-start;
+}
+
+.getInTouchForm > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.getInTouchTitle {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 53px;
+    color: #FFFFFF;
+    align-self: flex-start;
+    z-index: 10;
+}
+
+.getInTouchInput {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    background-color: transparent;
+    border: 0px solid transparent;
+    border-bottom: 1px solid white;
+    color: white;
+    padding: 20px 5px;
+    z-index: 10;
+}
+
+.getInTouchInput::placeholder {
+    opacity: 1;
+    color: #999999;
+  }
+
+.getInTouchBtn {
+    width: 136px;
+    height: 32px;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+}
+
+@media (max-width: 745px) {
+    .getInTouchTitle {
+        align-self: center;
+    }
+}

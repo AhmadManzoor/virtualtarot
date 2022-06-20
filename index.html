@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Virtual Tarot</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- Local imports -->
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+    <script src='index.js'></script>
+
+    <!-- JQuery Imports -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+
+    <!-- Flickity CSS and JavaScript -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <header class="header">
+            <div class="headerTitleContainer">
+                <img class="headerLogo" src="./static/logo.png" />
+                <span class="headerTitle">Virtual Tarot</span>
+            </div>
+
+            <div class="headerBtns">
+                <li>
+                    <div class="headerEllipse">
+                        <img src="./static/location.png" />
+                    </div>
+                    <span>
+                        <span>Reach Us</span><br>
+                        <span>LHE, PAK</span>
+                    </span>
+                </li>
+                <li>
+                    <div class="headerEllipse">
+                        <img src="./static/telephone.png" />
+                    </div>
+                    <span>
+                        <span>Talk to Us</span><br>
+                        <span>+92-1234-567</span>
+                    </span>
+                </li>
+                <li><button class="headerAppointmentBtn">Appointments</button></li>
+            </div>
+
+            <div class="headerProfile">
+                <img src="./static/navProfile.png" />
+            </div>
+
+            <div class="headerResponsive">
+                <img class="headerHamburger" src="./static/headerHamburgerIcon.png" onclick="toggleNavbar()"/>
+            </div>
+        </header>
+
+        <section class="celecteBackground">
+            <img class="celecteBackgroundImg" src="static/celestesphere.png" />
+        </section>
+
+        <section class="whatWeDo">
+            <img src="./static/what-we-do.png"/>
+            <div>
+                <span class="whatWeDoSubHeading">Lorem ipsum</span><br>
+                <span class="whatWeDoHeading">What we do</span><br>
+                <span class="whatWeDoDescription">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
+                    the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum
+                    may be used as a placeholder before final copy is available.</span><br>
+                <button>Learn More</button>
+            </div>
+        </section>
+
+        <section class="zodiacSigns">
+            <span>Choose Your Zodiac Sign</span>
+
+            <div class="zodiacSignCardsContainer">
+                <div class="zodiacSignCard">
+                    <div class="zodiacSignCardImgs">
+                        <img class="zodiacSignCardImgBackground" src="./static/zodiacSigns/ariesBackground.png"/>
+                        <img class="zodiacSignCardImg" src="./static/zodiacSigns/aries.png"/>
+                    </div>
+                    <div class="zodiacSignCardText">
+                        <span class="zodiacSignCardTextHeading">Aries</span>
+                        <span class="zodiacSignCardTextSubHeading">Apr 05-May 20</span>
+                    </div>
+                </div>
+
+                <div class="zodiacSignCard">
+                    <div class="zodiacSignCardImgs">
+                        <img class="zodiacSignCardImgBackground" src="./static/zodiacSigns/taurusBackground.png"/>
+                        <img class="zodiacSignCardImg" src="./static/zodiacSigns/taurus.png"/>
+                    </div>
+                    <div class="zodiacSignCardText">
+                        <span class="zodiacSignCardTextHeading">Taurus</span>
+                        <span class="zodiacSignCardTextSubHeading">Apr 05-May 20</span>
+                    </div>
+                </div>
+
+                <div class="zodiacSignCard">
+                    <div class="zodiacSignCardImgs">
+                        <img class="zodiacSignCardImgBackground" src="./static/zodiacSigns/geminiBackground.png"/>
+                        <img class="zodiacSignCardImg" src="./static/zodiacSigns/gemini.png"/>
+                    </div>
+                    <div class="zodiacSignCardText">
+                        <span class="zodiacSignCardTextHeading">Gemini</span>
+                        <span class="zodiacSignCardTextSubHeading">Apr 05-May 20</span>
+                    </div>
+                </div>
+
+                <div class="zodiacSignCard">
+                    <div class="zodiacSignCardImgs">
+                        <img class="zodiacSignCardImgBackground" src="./static/zodiacSigns/cancerBackground.png"/>
+                        <img class="zodiacSignCardImg" src="./static/zodiacSigns/cancer.png"/>
+                    </div>
+                    <div class="zodiacSignCardText">
+                        <span class="zodiacSignCardTextHeading">Cancer</span>
+                        <span class="zodiacSignCardTextSubHeading">Apr 05-May 20</span>
+                    </div>
+                </div>
+
+                <div class="zodiacSignCard">
+                    <div class="zodiacSignCardImgs">
+                        <img class="zodiacSignCardImgBackground" src="./static/zodiacSigns/leoBackground.png"/>
+                        <img class="zodiacSignCardImg" src="./static/zodiacSigns/leo.png"/>
+                    </div>
+                    <div class="zodiacSignCardText">
+                        <span class="zodiacSignCardTextHeading">Leo</span>
+                        <span class="zodiacSignCardTextSubHeading">Apr 05-May 20</span>
+                    </div>
+                </div>
+
+                <div class="zodiacSignCard">
+                    <div class="zodiacSignCardImgs">
+                        <img class="zodiacSignCardImgBackground" src="./static/zodiacSigns/virgoBackground.png"/>
+                        <img class="zodiacSignCardImg" src="./static/zodiacSigns/virgo.png"/>
+                    </div>
+                    <div class="zodiacSignCardText">
+                        <span class="zodiacSignCardTextHeading">Virgo</span>
+                        <span class="zodiacSignCardTextSubHeading">Apr 05-May 20</span>
+                    </div>
+                </div>
+
+                <div class="zodiacSignCard">
+                    <div class="zodiacSignCardImgs">
+                        <img class="zodiacSignCardImgBackground" src="./static/zodiacSigns/libraBackground.png"/>
+                        <img class="zodiacSignCardImg" src="./static/zodiacSigns/libra.png"/>
+                    </div>
+                    <div class="zodiacSignCardText">
+                        <span class="zodiacSignCardTextHeading">Libra</span>
+                        <span class="zodiacSignCardTextSubHeading">Apr 05-May 20</span>
+                    </div>
+                </div>
+
+                <div class="zodiacSignCard">
+                    <div class="zodiacSignCardImgs">
+                        <img class="zodiacSignCardImgBackground" src="./static/zodiacSigns/scorpioBackground.png"/>
+                        <img class="zodiacSignCardImg" src="./static/zodiacSigns/scorpio.png"/>
+                    </div>
+                    <div class="zodiacSignCardText">
+                        <span class="zodiacSignCardTextHeading">Scorpio</span>
+                        <span class="zodiacSignCardTextSubHeading">Apr 05-May 20</span>
+                    </div>
+                </div>
+
+                <div class="zodiacSignCard">
+                    <div class="zodiacSignCardImgs">
+                        <img class="zodiacSignCardImgBackground" src="./static/zodiacSigns/sagittariusBackground.png"/>
+                        <img class="zodiacSignCardImg" src="./static/zodiacSigns/sagittarius.png"/>
+                    </div>
+                    <div class="zodiacSignCardText">
+                        <span class="zodiacSignCardTextHeading">Sagittarius</span>
+                        <span class="zodiacSignCardTextSubHeading">Apr 05-May 20</span>
+                    </div>
+                </div>
+
+                <div class="zodiacSignCard">
+                    <div class="zodiacSignCardImgs">
+                        <img class="zodiacSignCardImgBackground" src="./static/zodiacSigns/capriconBackground.png"/>
+                        <img class="zodiacSignCardImg" src="./static/zodiacSigns/capricon.png"/>
+                    </div>
+                    <div class="zodiacSignCardText">
+                        <span class="zodiacSignCardTextHeading">Capricon</span>
+                        <span class="zodiacSignCardTextSubHeading">Apr 05-May 20</span>
+                    </div>
+                </div>
+
+                <div class="zodiacSignCard">
+                    <div class="zodiacSignCardImgs">
+                        <img class="zodiacSignCardImgBackground" src="./static/zodiacSigns/aquarisBackground.png"/>
+                        <img class="zodiacSignCardImg" src="./static/zodiacSigns/aquaris.png"/>
+                    </div>
+                    <div class="zodiacSignCardText">
+                        <span class="zodiacSignCardTextHeading">Aquarius</span>
+                        <span class="zodiacSignCardTextSubHeading">Apr 05-May 20</span>
+                    </div>
+                </div>
+
+                <div class="zodiacSignCard">
+                    <div class="zodiacSignCardImgs">
+                        <img class="zodiacSignCardImgBackground" src="./static/zodiacSigns/piscesBackground.png"/>
+                        <img class="zodiacSignCardImg" src="./static/zodiacSigns/pisces.png"/>
+                    </div>
+                    <div class="zodiacSignCardText">
+                        <span class="zodiacSignCardTextHeading">Pisces</span>
+                        <span class="zodiacSignCardTextSubHeading">Apr 05-May 20</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="servicesSection">
+            <span class="servicesSubHeading">Lorem ipsum</span>
+
+            <span class="servicesTitle">Our Services</span>
+
+            <div class="main-carousel">
+                <div class="carousel-cell">
+                    <div class="serviceCard">
+                        <img src="static/services/services_reading.png"/>
+                        <span class="serviceCardTitle">Face Reading</span>
+                        <span class="serviceCardSubHeading">Apr 05-May 20</span>
+                    </div>
+
+                    <button class="viewMoreBtn">View More</button>
+                </div>
+
+                <div class="carousel-cell">
+                    <div class="serviceCard">
+                        <img src="static/services/services_horoscope.png"/>
+                        <span class="serviceCardTitle">Daily Horoscrope</span>
+                        <span class="serviceCardSubHeading">Apr 05-May 20</span>
+                    </div>
+
+                    <button class="viewMoreBtn">View More</button>
+                </div>
+
+                <div class="carousel-cell">
+                    <div class="serviceCard">
+                        <img src="static/services/services_kundli.png"/>
+                        <span class="serviceCardTitle">Kundli Dosha</span>
+                        <span class="serviceCardSubHeading">Apr 05-May 20</span>
+                    </div>
+
+                    <button class="viewMoreBtn">View More</button>
+                </div>
+
+                <div class="carousel-cell">
+                    <div class="serviceCard">
+                        <img src="static/services/services_consultation.png"/>
+                        <span class="serviceCardTitle">Personal Consultation</span>
+                        <span class="serviceCardSubHeading">Apr 05-May 20</span>
+                    </div>
+
+                    <button class="viewMoreBtn">View More</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="feedbackSection">
+            <span class="servicesSubHeading">Lorem ipsum</span>
+
+            <span class="servicesTitle">What My Clients Say</span>
+
+            <div class="feedbackCardsContainer">
+                <div class="feedbackCard">
+                    <div class="feedbackImageContainer">
+                        <img class="feedbackImageBackground" src="./static/lines-circle.png">
+                        <img class="feedbackImage" src="./static/navProfile2x.png"/>
+                    </div>
+                    <span class="feedbackCardDescription">
+                        In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the.
+                    </span>
+                    <span class="feedbackCardTitle">
+                        Jacki
+                    </span>
+    
+                    <div class="feedbackSignContainer">
+                        <span><img src="./static/feedback/arrow.png"/> Leo</span>
+                        <span><img src="./static/feedback/ellipse.png"/> Virgo</span>
+                        <span><img src="./static/feedback/star.png"/> Aries</span>
+                    </div>
+                </div>
+
+                <div class="feedbackCard">
+                    <div class="feedbackImageContainer">
+                        <img class="feedbackImageBackground" src="./static/lines-circle.png">
+                        <img class="feedbackImage" src="./static/navProfile2x.png"/>
+                    </div>
+                    <span class="feedbackCardDescription">
+                        In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the.
+                    </span>
+                    <span class="feedbackCardTitle">
+                        Jacki
+                    </span>
+    
+                    <div class="feedbackSignContainer">
+                        <span><img src="./static/feedback/arrow.png"/> Leo</span>
+                        <span><img src="./static/feedback/ellipse.png"/> Virgo</span>
+                        <span><img src="./static/feedback/star.png"/> Aries</span>
+                    </div>
+                </div>
+
+                <div class="feedbackCard">
+                    <div class="feedbackImageContainer">
+                        <img class="feedbackImageBackground" src="./static/lines-circle.png">
+                        <img class="feedbackImage" src="./static/navProfile2x.png"/>
+                    </div>
+                    <span class="feedbackCardDescription">
+                        In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the.
+                    </span>
+                    <span class="feedbackCardTitle">
+                        Jacki
+                    </span>
+    
+                    <div class="feedbackSignContainer">
+                        <span><img src="./static/feedback/arrow.png"/> Leo</span>
+                        <span><img src="./static/feedback/ellipse.png"/> Virgo</span>
+                        <span><img src="./static/feedback/star.png"/> Aries</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="getInTouchSection">
+            <form class="getInTouchForm">
+                <img src="./static/light-moon.png"/>
+                <span class="getInTouchTitle">Get in touch</span>
+                <div>
+                    <input class="getInTouchInput" type="text" placeholder="Your Name"/>
+                    <input class="getInTouchInput" type="text" placeholder="Your Email Address"/>
+                    <button class="getInTouchBtn">Get Notified</button>
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+
+<script src='flickity.js'></script>
+
+</html>
